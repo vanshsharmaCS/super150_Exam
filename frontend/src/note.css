@@ -1,0 +1,121 @@
+/* General container for the notes page */
+.notes-container {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f6f9;
+    border-radius: 10px;
+}
+
+/* Header with a greeting and logout button */
+.notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.notes-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.logout-btn {
+    padding: 10px 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #ff4e4e;
+}
+
+/* Input area for creating new notes */
+.note-input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.note-input {
+    padding: 10px;
+    width: 80%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.add-note-btn {
+    padding: 10px 15px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-note-btn:hover {
+    background-color: #45a049;
+}
+
+/* Notes display area */
+.notes-list {
+    margin-top: 20px;
+}
+
+.note-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-content {
+    font-size: 1rem;
+    color: #333;
+    flex: 1;
+}
+
+.delete-note-btn {
+    padding: 5px 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-note-btn:hover {
+    background-color: #ff4e4e;
+}
+
+/* Responsive Design: Mobile view */
+@media (max-width: 768px) {
+    .notes-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .note-input-container {
+        flex-direction: column;
+    }
+
+    .note-input {
+        width: 100%;
+    }
+
+    .add-note-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}

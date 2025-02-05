@@ -1,0 +1,97 @@
+/* General container for the authentication page */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f6f9;
+}
+
+/* The form container */
+.auth-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading of the form */
+.auth-heading {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* The form fields */
+.auth-form-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input fields */
+.auth-input {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.auth-input:focus {
+    border-color: #4caf50;
+}
+
+/* The submit button */
+.auth-btn {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: #45a049;
+}
+
+/* Button to switch between Login and Register */
+.switch-auth {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.switch-btn {
+    background: none;
+    border: none;
+    color: #4caf50;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.switch-btn:hover {
+    color: #45a049;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .auth-form {
+        padding: 20px;
+    }
+
+    .auth-heading {
+        font-size: 1.5rem;
+    }
+
+    .auth-btn, .switch-btn {
+        font-size: 0.9rem;
+    }
+}
